@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRAME® — Creative Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <a href="#" class="logo">FRAME<span>®</span></a>
+
+        <nav class="navigation">
+            <a href="#work">Selected Work</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#contact" class="header-link">
+            Let's Talk <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-top">
+                <span>INDEPENDENT CREATIVE STUDIO</span>
+                <span>LAGOS, NIGERIA — AVAILABLE WORLDWIDE</span>
+            </div>
+
+            <h1>
+                We create
+                <span>meaningful</span>
+                digital experiences.
+            </h1>
+
+            <div class="hero-bottom">
+                <p>
+                    Strategy, design and technology come together
+                    to build identities and digital experiences
+                    that leave a lasting impression.
+                </p>
+
+                <a href="#work" class="discover-link">
+                    DISCOVER OUR WORK
+                    <i class="fa-solid fa-arrow-down"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section class="work-section" id="work">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">OUR SELECTED PROJECTS</span>
+                    <h2>Ideas made <em>visible.</em></h2>
+                </div>
+
+                <span class="project-count">06 PROJECTS / 2026</span>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-container">
+
+                <button class="filter-btn active" data-category="all">
+                    All Projects <span>06</span>
+                </button>
+
+                <button class="filter-btn" data-category="branding">
+                    Branding <span>02</span>
+                </button>
+
+                <button class="filter-btn" data-category="web">
+                    Web Design <span>02</span>
+                </button>
+
+                <button class="filter-btn" data-category="photography">
+                    Photography <span>02</span>
+                </button>
+
+            </div>
+
+            <!-- Project Grid -->
+            <div class="project-grid">
+
+                <article class="project-card" data-category="branding">
+                    <div class="project-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?w=900"
+                            alt="Creative visual identity and branding presentation"
+                        >
+                        <span class="project-number">01</span>
+                    </div>
+
+                    <div class="project-info">
+                        <div>
+                            <h3>MONO Studio</h3>
+                            <p>Brand Identity / Art Direction</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900"
+                            alt="Modern digital website interface"
+                        >
+                        <span class="project-number">02</span>
+                    </div>
+
+                    <div class="project-info">
+                        <div>
+                            <h3>ATELIER Digital</h3>
+                            <p>Website Design / Development</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="photography">
+                    <div class="project-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1531058020387-3be344556be6?w=900"
+                            alt="Artistic creative photography"
+                        >
+                        <span class="project-number">03</span>
+                    </div>
+
+                    <div class="project-info">
+                        <div>
+                            <h3>FORM & LIGHT</h3>
+                            <p>Photography / Visual Direction</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="branding">
+                    <div class="project-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1544816155-12df9643f363?w=900"
+                            alt="Editorial branding and stationery"
+                        >
+                        <span class="project-number">04</span>
+                    </div>
+
+                    <div class="project-info">
+                        <div>
+                            <h3>OBJECTS & CO.</h3>
+                            <p>Branding / Packaging</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900"
+                            alt="Website development workspace"
+                        >
+                        <span class="project-number">05</span>
+                    </div>
+
+                    <div class="project-info">
+                        <div>
+                            <h3>CREATIVE SPACE</h3>
+                            <p>Digital Experience / UI Design</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="photography">
+                    <div class="project-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=900"
+                            alt="Fashion editorial photography"
+                        >
+                        <span class="project-number">06</span>
+                    </div>
+
+                    <div class="project-info">
+                        <div>
+                            <h3>THE EDITION</h3>
+                            <p>Editorial / Photography</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="about-section" id="about">
+            <span class="section-label">A LITTLE ABOUT FRAME</span>
+
+            <h2>
+                Great design isn't just
+                about how things look.
+                It's about how they <em>connect.</em>
+            </h2>
+
+            <p>
+                We partner with ambitious people and businesses
+                to transform ideas into thoughtful creative work.
+            </p>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact-section" id="contact">
+            <span class="section-label">HAVE A PROJECT IN MIND?</span>
+
+            <h2>Let's create something <em>remarkable.</em></h2>
+
+            <a href="mailto:hello@frame.example">
+                START A CONVERSATION
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="#" class="logo">FRAME<span>®</span></a>
+
+        <p>© 2026 FRAME Creative Studio. All rights reserved.</p>
+
+        <a href="#top">BACK TO TOP ↑</a>
+    </footer>
+
+</body>
+</html>
