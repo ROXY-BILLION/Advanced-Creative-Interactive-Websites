@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SOLARA — Discover extraordinary destinations, exceptional stays and unforgettable travel experiences.">
+    <title>SOLARA — Travel Beyond Ordinary</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <header class="site-header">
+
+        <nav class="navbar">
+
+            <a href="#home" class="logo">
+                SOLARA<span>.</span>
+                <small>TRAVEL & EXPERIENCES</small>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navLinks">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#stays">Our Stays</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#about">Our Story</a></li>
+
+                <li class="nav-cta">
+                    <a href="#inquiry">Plan Your Journey <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- Hero Section -->
+
+        <section class="hero" id="home">
+
+            <div class="hero-image">
+                <img
+                    src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=2000&q=85"
+                    alt="Beautiful tropical island surrounded by turquoise water"
+                >
+            </div>
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <p class="eyebrow hero-eyebrow">
+                    <span></span> THE ART OF TRAVEL
+                </p>
+
+                <h1>
+                    Go beyond<br>
+                    <em>the ordinary.</em>
+                </h1>
+
+                <p class="hero-description">
+                    Extraordinary places. Meaningful moments.
+                    Journeys designed around the way you want to experience the world.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a href="#destinations" class="btn btn-light">
+                        Discover Destinations
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="#about" class="hero-text-link">
+                        Our philosophy
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-bottom">
+
+                <p>CURATED JOURNEYS. UNFORGETTABLE STORIES.</p>
+
+                <a href="#introduction">
+                    SCROLL TO EXPLORE
+                    <i class="fa-solid fa-arrow-down"></i>
+                </a>
+
+                <span>01 / 04</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- Introduction -->
+
+        <section class="introduction section-padding" id="introduction">
+
+            <div class="intro-label">
+                <span>01</span>
+                <span>WELCOME TO SOLARA</span>
+            </div>
+
+            <div class="intro-content">
+
+                <h2>
+                    The world is full of places.
+                    <em>Find the ones that move you.</em>
+                </h2>
+
+                <div class="intro-description">
+
+                    <p>
+                        We believe travel should be more than simply arriving
+                        somewhere beautiful. It should be about discovering
+                        new perspectives, connecting with different cultures
+                        and collecting moments that stay with you.
+                    </p>
+
+                    <a href="#about" class="text-link">
+                        Discover our story
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Destinations -->
+
+        <section class="destinations-section section-padding" id="destinations">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow">EXPLORE THE WORLD</p>
+
+                    <h2>
+                        Find your <em>somewhere.</em>
+                    </h2>
+                </div>
+
+                <p class="section-description">
+                    From secluded islands to timeless European cities,
+                    discover places worth travelling for.
+                </p>
+
+            </div>
+
+
+            <!-- Destination Filters -->
+
+            <div class="destination-filters">
+
+                <button class="filter-btn active" type="button" data-category="all">
+                    All Places <span>06</span>
+                </button>
+
+                <button class="filter-btn" type="button" data-category="island">
+                    Islands
+                </button>
+
+                <button class="filter-btn" type="button" data-category="coastal">
+                    Coastal
+                </button>
+
+                <button class="filter-btn" type="button" data-category="city">
+                    Cities
+                </button>
+
+                <button class="filter-btn" type="button" data-category="nature">
+                    Nature
+                </button>
+
+            </div>
+
+
+            <!-- Destination Grid -->
+
+            <div class="destination-grid">
+
+                <!-- Destination 1 -->
+
+                <article class="destination-card destination-featured" data-category="island">
+
+                    <div class="destination-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1200&q=85"
+                            alt="Maldives tropical island"
+                            loading="lazy"
+                        >
+
+                        <span class="destination-number">01</span>
+
+                        <span class="destination-type">ISLAND ESCAPE</span>
+
+                    </div>
+
+                    <div class="destination-info">
+
+                        <div>
+                            <p>MALDIVES</p>
+                            <h3>Indian Ocean</h3>
+                        </div>
+
+                        <a href="#inquiry" aria-label="Plan a journey to Maldives">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Destination 2 -->
+
+                <article class="destination-card" data-category="coastal">
+
+                    <div class="destination-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1000&q=85"
+                            alt="Santorini coastal architecture"
+                            loading="lazy"
+                        >
+
+                        <span class="destination-number">02</span>
+
+                        <span class="destination-type">COASTAL RETREAT</span>
+
+                    </div>
+
+                    <div class="destination-info">
+
+                        <div>
+                            <p>SANTORINI</p>
+                            <h3>Greek Islands</h3>
+                        </div>
+
+                        <a href="#inquiry" aria-label="Plan a journey to Santorini">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Destination 3 -->
+
+                <article class="destination-card" data-category="island">
+
+                    <div class="destination-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1000&q=85"
+                            alt="Bali tropical landscape"
+                            loading="lazy"
+                        >
+
+                        <span class="destination-number">03</span>
+
+                        <span class="destination-type">ISLAND ESCAPE</span>
+
+                    </div>
+
+                    <div class="destination-info">
+
+                        <div>
+                            <p>BALI</p>
+                            <h3>Indonesia</h3>
+                        </div>
+
+                        <a href="#inquiry" aria-label="Plan a journey to Bali">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Destination 4 -->
+
+                <article class="destination-card" data-category="city">
+
+                    <div class="destination-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=1000&q=85"
+                            alt="Paris city architecture"
+                            loading="lazy"
+                        >
+
+                        <span class="destination-number">04</span>
+
+                        <span class="destination-type">CITY DISCOVERY</span>
+
+                    </div>
+
+                    <div class="destination-info">
+
+                        <div>
+                            <p>PARIS</p>
+                            <h3>France</h3>
+                        </div>
+
+                        <a href="#inquiry" aria-label="Plan a journey to Paris">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Destination 5 -->
+
+                <article class="destination-card" data-category="coastal">
+
+                    <div class="destination-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1000&q=85"
+                            alt="Italian coastal village"
+                            loading="lazy"
+                        >
+
+                        <span class="destination-number">05</span>
+
+                        <span class="destination-type">COASTAL ESCAPE</span>
+
+                    </div>
+
+                    <div class="destination-info">
+
+                        <div>
+                            <p>AMALFI COAST</p>
+                            <h3>Italy</h3>
+                        </div>
+
+                        <a href="#inquiry" aria-label="Plan a journey to Amalfi Coast">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Destination 6 -->
+
+                <article class="destination-card" data-category="nature">
+
+                    <div class="destination-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=85"
+                            alt="Mountain landscape surrounded by nature"
+                            loading="lazy"
+                        >
+
+                        <span class="destination-number">06</span>
+
+                        <span class="destination-type">NATURE RETREAT</span>
+
+                    </div>
+
+                    <div class="destination-info">
+
+                        <div>
+                            <p>THE ALPS</p>
+                            <h3>Switzerland</h3>
+                        </div>
+
+                        <a href="#inquiry" aria-label="Plan a journey to the Alps">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <div class="destination-footer">
+
+                <p>06 DESTINATIONS. ENDLESS POSSIBILITIES.</p>
+
+                <a href="#inquiry" class="text-link">
+                    Find your next destination
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Brand Statement -->
+
+        <section class="statement-section">
+
+            <div class="statement-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1800&q=85"
+                    alt="Peaceful mountain lake surrounded by nature"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="statement-content">
+
+                <p class="eyebrow">THE SOLARA DIFFERENCE</p>
+
+                <h2>
+                    Not just a trip.
+                    <em>A feeling you'll carry.</em>
+                </h2>
+
+                <p>
+                    We look beyond the usual itineraries to create
+                    travel experiences that feel personal, considered
+                    and genuinely unforgettable.
+                </p>
+
+                <a href="#about" class="btn btn-outline-light">
+                    Our approach
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Accommodation -->
+
+        <section class="stays-section section-padding" id="stays">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow">STAY SOMEWHERE SPECIAL</p>
+
+                    <h2>
+                        Exceptional <em>stays.</em>
+                    </h2>
+                </div>
+
+                <p class="section-description">
+                    Places where thoughtful design, exceptional service
+                    and beautiful surroundings come together.
+                </p>
+
+            </div>
+
+
+            <div class="stays-grid">
+
+                <article class="stay-card stay-large">
+
+                    <div class="stay-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1300&q=85"
+                            alt="Luxury tropical resort swimming pool"
+                            loading="lazy"
+                        >
+
+                        <span>01 / PRIVATE RESORTS</span>
+
+                    </div>
+
+                    <div class="stay-info">
+
+                        <div>
+                            <p>PRIVATE ISLANDS & RESORTS</p>
+                            <h3>Privacy without compromise.</h3>
+                        </div>
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </div>
+
+                </article>
+
+
+                <article class="stay-card">
+
+                    <div class="stay-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1000&q=85"
+                            alt="Elegant luxury hotel bedroom"
+                            loading="lazy"
+                        >
+
+                        <span>02 / BOUTIQUE HOTELS</span>
+
+                    </div>
+
+                    <div class="stay-info">
+
+                        <div>
+                            <p>BOUTIQUE HOTELS</p>
+                            <h3>Character in every detail.</h3>
+                        </div>
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </div>
+
+                </article>
+
+
+                <article class="stay-card">
+
+                    <div class="stay-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=85"
+                            alt="Contemporary luxury private villa"
+                            loading="lazy"
+                        >
+
+                        <span>03 / PRIVATE VILLAS</span>
+
+                    </div>
+
+                    <div class="stay-info">
+
+                        <div>
+                            <p>PRIVATE VILLAS</p>
+                            <h3>Your own piece of paradise.</h3>
+                        </div>
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Experiences -->
+
+        <section class="experiences-section section-padding" id="experiences">
+
+            <div class="experiences-heading">
+
+                <p class="eyebrow">MORE THAN A DESTINATION</p>
+
+                <h2>
+                    Travel for the <em>experience.</em>
+                </h2>
+
+                <p>
+                    Discover the moments that make every journey different.
+                </p>
+
+            </div>
+
+
+            <div class="experience-list">
+
+                <article class="experience-item">
+
+                    <div class="experience-number">01</div>
+
+                    <div class="experience-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=700&q=85"
+                            alt="Private beach experience"
+                            loading="lazy"
+                        >
+
+                    </div>
+
+                    <div class="experience-info">
+
+                        <p>01 — SLOW LIVING</p>
+                        <h3>Private Island Escapes</h3>
+                        <span>Find stillness in the world's most beautiful places.</span>
+
+                    </div>
+
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                </article>
+
+
+                <article class="experience-item">
+
+                    <div class="experience-number">02</div>
+
+                    <div class="experience-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=700&q=85"
+                            alt="Fine dining restaurant experience"
+                            loading="lazy"
+                        >
+
+                    </div>
+
+                    <div class="experience-info">
+
+                        <p>02 — CULTURE & TASTE</p>
+                        <h3>Food & Wine Journeys</h3>
+                        <span>Explore local flavours and memorable dining.</span>
+
+                    </div>
+
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                </article>
+
+
+                <article class="experience-item">
+
+                    <div class="experience-number">03</div>
+
+                    <div class="experience-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=700&q=85"
+                            alt="Mountain adventure experience"
+                            loading="lazy"
+                        >
+
+                    </div>
+
+                    <div class="experience-info">
+
+                        <p>03 — ADVENTURE</p>
+                        <h3>Beyond the Familiar</h3>
+                        <span>Discover landscapes and experiences beyond the expected.</span>
+
+                    </div>
+
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- About / Philosophy -->
+
+        <section class="about-section section-padding" id="about">
+
+            <div class="about-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85"
+                    alt="Traveller overlooking a beautiful natural landscape"
+                    loading="lazy"
+                >
+
+                <div class="about-image-caption">
+                    <span>TRAVEL WITH PURPOSE</span>
+                    <span>EST. 2026</span>
+                </div>
+
+            </div>
+
+
+            <div class="about-content">
+
+                <p class="eyebrow">A DIFFERENT WAY TO SEE THE WORLD</p>
+
+                <h2>
+                    Thoughtful journeys.
+                    <em>Personal discoveries.</em>
+                </h2>
+
+                <p>
+                    SOLARA was created around a simple idea:
+                    the best journeys are the ones that feel like yours.
+                </p>
+
+                <p>
+                    We bring together remarkable destinations,
+                    carefully selected accommodation and meaningful
+                    experiences to help you travel with greater purpose.
+                </p>
+
+                <div class="about-statistics">
+
+                    <div>
+                        <strong>25+</strong>
+                        <span>CURATED DESTINATIONS</span>
+                    </div>
+
+                    <div>
+                        <strong>100%</strong>
+                        <span>PERSONAL APPROACH</span>
+                    </div>
+
+                </div>
+
+                <a href="#inquiry" class="text-link">
+                    Start planning with us
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Why Choose SOLARA -->
+
+        <section class="benefits-section section-padding">
+
+            <div class="benefits-heading">
+
+                <p class="eyebrow">WHY TRAVEL WITH SOLARA</p>
+
+                <h2>
+                    Every detail, <em>considered.</em>
+                </h2>
+
+            </div>
+
+
+            <div class="benefits-grid">
+
+                <article class="benefit-card">
+
+                    <span class="benefit-icon">
+                        <i class="fa-solid fa-compass"></i>
+                    </span>
+
+                    <span class="benefit-number">01</span>
+
+                    <h3>Personalised Journeys</h3>
+
+                    <p>
+                        Every itinerary is shaped around your interests,
+                        pace and idea of the perfect escape.
+                    </p>
+
+                </article>
+
+
+                <article class="benefit-card">
+
+                    <span class="benefit-icon">
+                        <i class="fa-solid fa-gem"></i>
+                    </span>
+
+                    <span class="benefit-number">02</span>
+
+                    <h3>Exceptional Selection</h3>
+
+                    <p>
+                        Discover remarkable stays and destinations
+                        selected for their character and quality.
+                    </p>
+
+                </article>
+
+
+                <article class="benefit-card">
+
+                    <span class="benefit-icon">
+                        <i class="fa-solid fa-earth-europe"></i>
+                    </span>
+
+                    <span class="benefit-number">03</span>
+
+                    <h3>Meaningful Experiences</h3>
+
+                    <p>
+                        Travel deeper through authentic experiences
+                        and thoughtful local discoveries.
+                    </p>
+
+                </article>
+
+
+                <article class="benefit-card">
+
+                    <span class="benefit-icon">
+                        <i class="fa-solid fa-headset"></i>
+                    </span>
+
+                    <span class="benefit-number">04</span>
+
+                    <h3>Dedicated Support</h3>
+
+                    <p>
+                        Get guidance throughout your planning journey
+                        from your first idea to your departure.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Testimonials -->
+
+        <section class="testimonials-section section-padding">
+
+            <div class="testimonial-heading">
+
+                <p class="eyebrow">TRAVEL STORIES</p>
+
+                <h2>
+                    Moments worth <em>remembering.</em>
+                </h2>
+
+            </div>
+
+
+            <div class="testimonial-grid">
+
+                <article class="testimonial-card">
+
+                    <div class="testimonial-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <blockquote>
+                        "Every detail felt intentional. The experience
+                        was personal, effortless and far beyond what
+                        we had imagined."
+                    </blockquote>
+
+                    <div class="testimonial-author">
+
+                        <div class="author-avatar">AM</div>
+
+                        <div>
+                            <h4>Alex Morgan</h4>
+                            <span>TRAVELLED TO MALDIVES</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="testimonial-card">
+
+                    <div class="testimonial-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <blockquote>
+                        "We discovered places we would never have
+                        found ourselves. It was the kind of journey
+                        you wish would never end."
+                    </blockquote>
+
+                    <div class="testimonial-author">
+
+                        <div class="author-avatar">SL</div>
+
+                        <div>
+                            <h4>Sophie Laurent</h4>
+                            <span>TRAVELLED TO ITALY</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="testimonial-card">
+
+                    <div class="testimonial-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <blockquote>
+                        "From the accommodation to the experiences,
+                        everything came together beautifully.
+                        We are already planning our next trip."
+                    </blockquote>
+
+                    <div class="testimonial-author">
+
+                        <div class="author-avatar">JD</div>
+
+                        <div>
+                            <h4>James Davis</h4>
+                            <span>TRAVELLED TO BALI</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Inquiry Section -->
+
+        <section class="inquiry-section section-padding" id="inquiry">
+
+            <div class="inquiry-content">
+
+                <p class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</p>
+
+                <h2>
+                    Where will the world
+                    <em>take you?</em>
+                </h2>
+
+                <p>
+                    Tell us a little about the journey you have in mind.
+                    We'll help you turn the idea into something extraordinary.
+                </p>
+
+                <div class="inquiry-contact">
+
+                    <span>HAVE A QUESTION?</span>
+
+                    <a href="mailto:hello@solara.travel">
+                        hello@solara.travel
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Travel Inquiry Form -->
+
+            <form class="inquiry-form" id="travelInquiryForm" novalidate>
+
+                <div class="form-heading">
+
+                    <span>LET'S PLAN SOMETHING SPECIAL</span>
+
+                    <h3>Tell us about your trip.</h3>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="fullName">Full Name</label>
+
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            placeholder="Your name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">Email Address</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="you@example.com"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="destination">Preferred Destination</label>
+
+                        <select id="destination" name="destination" required>
+
+                            <option value="">Choose a destination</option>
+                            <option value="Maldives">Maldives</option>
+                            <option value="Santorini">Santorini</option>
+                            <option value="Bali">Bali</option>
+                            <option value="Paris">Paris</option>
+                            <option value="Amalfi Coast">Amalfi Coast</option>
+                            <option value="The Alps">The Alps</option>
+                            <option value="Not sure yet">Not sure yet</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="guests">Number of Travellers</label>
+
+                        <select id="guests" name="guests" required>
+
+                            <option value="">Select travellers</option>
+                            <option value="1">1 Traveller</option>
+                            <option value="2">2 Travellers</option>
+                            <option value="3-4">3–4 Travellers</option>
+                            <option value="5-8">5–8 Travellers</option>
+                            <option value="9+">9+ Travellers</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="travelDate">Preferred Travel Date</label>
+
+                    <input
+                        type="date"
+                        id="travelDate"
+                        name="travelDate"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="message">Tell us about your ideal journey</label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="4"
+                        placeholder="What kind of experience are you looking for?"
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <button type="submit" class="btn btn-dark form-submit">
+
+                    Send Travel Inquiry
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+
+                <p class="form-message" id="formMessage" aria-live="polite"></p>
+
+            </form>
+
+        </section>
+
+
+        <!-- Newsletter / Final CTA -->
+
+        <section class="newsletter-section">
+
+            <div>
+
+                <p class="eyebrow">A LITTLE INSPIRATION, OCCASIONALLY</p>
+
+                <h2>
+                    Let the world <em>find you.</em>
+                </h2>
+
+                <p>
+                    Discover remarkable destinations and travel inspiration
+                    for your next adventure.
+                </p>
+
+            </div>
+
+            <a href="#destinations" class="btn btn-light">
+                Explore the world
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer class="site-footer">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <a href="#home" class="logo footer-logo">
+                    SOLARA<span>.</span>
+                    <small>TRAVEL & EXPERIENCES</small>
+                </a>
+
+                <p>
+                    Thoughtful journeys. Remarkable places.
+                    Experiences that stay with you.
+                </p>
+
+                <div class="social-links">
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" aria-label="Pinterest">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>EXPLORE</h4>
+
+                <a href="#destinations">Destinations</a>
+                <a href="#stays">Our Stays</a>
+                <a href="#experiences">Experiences</a>
+                <a href="#about">Our Story</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>PLAN YOUR TRIP</h4>
+
+                <a href="#inquiry">Travel Inquiry</a>
+                <a href="#destinations">Find a Destination</a>
+                <a href="#stays">Find Accommodation</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>GET IN TOUCH</h4>
+
+                <a href="mailto:hello@solara.travel">hello@solara.travel</a>
+                <a href="#inquiry">Contact Our Team</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>© 2026 SOLARA TRAVEL & EXPERIENCES. ALL RIGHTS RESERVED.</p>
+
+            <a href="#home">
+                BACK TO TOP
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+
+        </div>
+
+    </footer>
+<script src="script.js"></script>
+</body>
+
+</html>
