@@ -1,4 +1,3 @@
-
 /*** Project Filtering ***/
 const FilterButton = document.querySelectorAll(".filter-btn");
 const ProjectCard = document.querySelectorAll(".project-card");

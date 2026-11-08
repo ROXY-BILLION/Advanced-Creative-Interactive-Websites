@@ -1,0 +1,794 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Discover extraordinary destinations, exceptional stays and curated luxury travel experiences with AZURE Luxury Escape.">
+
+    <title>AZURE — Luxury Escape</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="site-header">
+        <nav class="navbar container">
+
+            <a href="#home" class="logo">
+                AZURE<span>.</span>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#stays">The Collection</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#philosophy">Our Story</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <a href="#contact" class="nav-cta">
+                Plan Your Escape
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                aria-controls="navLinks"
+            >
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+
+            <div class="hero-image">
+                <img
+                    src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=2000&q=90"
+                    alt="Luxury tropical island surrounded by turquoise ocean"
+                >
+            </div>
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content container">
+
+                <span class="eyebrow">
+                    THE ART OF EXCEPTIONAL TRAVEL
+                </span>
+
+                <h1>
+                    Somewhere beyond
+                    <span>the ordinary.</span>
+                </h1>
+
+                <p>
+                    Discover extraordinary destinations, remarkable
+                    places to stay and experiences that stay with you.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#destinations" class="btn btn-primary">
+                        Explore Destinations
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="#philosophy" class="text-link">
+                        Discover AZURE
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="hero-bottom container">
+                <span>CURATED JOURNEYS. TIMELESS MEMORIES.</span>
+                <span>01 — 04</span>
+            </div>
+
+        </section>
+
+
+        <!-- Introduction -->
+        <section class="intro-section section-padding">
+
+            <div class="container intro-grid">
+
+                <div class="intro-label">
+                    <span class="eyebrow">A DIFFERENT WAY TO TRAVEL</span>
+                </div>
+
+                <div class="intro-content">
+
+                    <h2>
+                        The world is full of places.
+                        <span>We're here to help you discover the extraordinary.</span>
+                    </h2>
+
+                    <p>
+                        At AZURE, we believe luxury is more than where
+                        you stay. It is how a place makes you feel,
+                        the experiences you discover and the memories
+                        you carry home.
+                    </p>
+
+                    <a href="#philosophy" class="underlined-link">
+                        Our philosophy
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Destinations -->
+        <section class="destinations-section section-padding" id="destinations">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <span class="eyebrow">EXPLORE THE WORLD</span>
+
+                        <h2>
+                            Destinations worth
+                            <span>dreaming about.</span>
+                        </h2>
+                    </div>
+
+                    <p>
+                        From secluded islands to timeless coastal towns,
+                        discover places that offer something unforgettable.
+                    </p>
+
+                </div>
+
+
+                <!-- Destination Filters -->
+                <div class="destination-filters">
+
+                    <button
+                        class="filter-btn active"
+                        type="button"
+                        data-category="all"
+                    >
+                        All Destinations
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        type="button"
+                        data-category="island"
+                    >
+                        Island Escapes
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        type="button"
+                        data-category="coastal"
+                    >
+                        Coastal Escapes
+                    </button>
+
+                </div>
+
+
+                <!-- Destination Cards -->
+                <div class="destination-grid">
+
+                    <!-- Maldives -->
+                    <article class="destination-card destination-large" data-category="island">
+
+                        <div class="destination-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1200&q=85"
+                                alt="Overwater villas in the Maldives"
+                            >
+                        </div>
+
+                        <div class="destination-info">
+
+                            <span class="destination-region">INDIAN OCEAN</span>
+
+                            <h3>Maldives</h3>
+
+                            <p>
+                                A world of turquoise waters, private islands
+                                and extraordinary tranquillity.
+                            </p>
+
+                            <button
+                                class="destination-explore"
+                                type="button"
+                                data-name="Maldives"
+                                data-location="Indian Ocean"
+                                data-description="Escape to a world of turquoise lagoons, secluded islands and extraordinary overwater retreats. The Maldives is where privacy, serenity and barefoot luxury meet."
+                                data-image="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1400&q=90"
+                                data-experience="Private island living"
+                            >
+                                Explore destination
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Santorini -->
+                    <article class="destination-card" data-category="coastal">
+
+                        <div class="destination-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1000&q=85"
+                                alt="White architecture overlooking the sea in Santorini"
+                            >
+                        </div>
+
+                        <div class="destination-info">
+
+                            <span class="destination-region">GREECE</span>
+
+                            <h3>Santorini</h3>
+
+                            <p>
+                                Iconic architecture, beautiful sunsets
+                                and the charm of the Aegean.
+                            </p>
+
+                            <button
+                                class="destination-explore"
+                                type="button"
+                                data-name="Santorini"
+                                data-location="Cyclades, Greece"
+                                data-description="Experience the magic of the Aegean through whitewashed villages, dramatic volcanic landscapes and unforgettable sunsets overlooking the sea."
+                                data-image="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1400&q=90"
+                                data-experience="Sunset dining above the Aegean"
+                            >
+                                Explore destination
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Bali -->
+                    <article class="destination-card" data-category="island">
+
+                        <div class="destination-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1000&q=85"
+                                alt="Tropical landscape in Bali"
+                            >
+                        </div>
+
+                        <div class="destination-info">
+
+                            <span class="destination-region">INDONESIA</span>
+
+                            <h3>Bali</h3>
+
+                            <p>
+                                Tropical landscapes, peaceful retreats
+                                and a rich cultural atmosphere.
+                            </p>
+
+                            <button
+                                class="destination-explore"
+                                type="button"
+                                data-name="Bali"
+                                data-location="Indonesia"
+                                data-description="Find your rhythm among lush rice terraces, tropical forests, beautiful beaches and peaceful private retreats in the heart of Indonesia."
+                                data-image="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1400&q=90"
+                                data-experience="Private jungle wellness retreat"
+                            >
+                                Explore destination
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Amalfi Coast -->
+                    <article class="destination-card" data-category="coastal">
+
+                        <div class="destination-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?auto=format&fit=crop&w=1000&q=85"
+                                alt="Colourful coastal buildings along the Amalfi Coast"
+                            >
+                        </div>
+
+                        <div class="destination-info">
+
+                            <span class="destination-region">ITALY</span>
+
+                            <h3>Amalfi Coast</h3>
+
+                            <p>
+                                Coastal elegance, charming villages
+                                and the beauty of the Italian Riviera.
+                            </p>
+
+                            <button
+                                class="destination-explore"
+                                type="button"
+                                data-name="Amalfi Coast"
+                                data-location="Southern Italy"
+                                data-description="Discover a coastline of colourful villages, dramatic cliffs, elegant hotels and long Mediterranean afternoons."
+                                data-image="https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?auto=format&fit=crop&w=1400&q=90"
+                                data-experience="Private Mediterranean boat journey"
+                            >
+                                Explore destination
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- Destination Spotlight -->
+                <div class="destination-spotlight" id="destinationSpotlight">
+
+                    <div class="spotlight-image">
+                        <img
+                            id="spotlightImage"
+                            src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1400&q=90"
+                            alt="Featured destination: Maldives"
+                        >
+                    </div>
+
+                    <div class="spotlight-content">
+
+                        <span class="eyebrow">YOUR NEXT ESCAPE</span>
+
+                        <span class="spotlight-location" id="spotlightLocation">
+                            INDIAN OCEAN
+                        </span>
+
+                        <h3 id="spotlightName">Maldives</h3>
+
+                        <p id="spotlightDescription">
+                            Escape to a world of turquoise lagoons,
+                            secluded islands and extraordinary overwater
+                            retreats. The Maldives is where privacy,
+                            serenity and barefoot luxury meet.
+                        </p>
+
+                        <div class="spotlight-experience">
+
+                            <i class="fa-solid fa-compass"></i>
+
+                            <div>
+                                <span>FEATURED EXPERIENCE</span>
+                                <p id="spotlightExperience">
+                                    Private island living
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <a href="#contact" class="btn btn-primary">
+                            Plan This Escape
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Stays -->
+        <section class="stays-section section-padding" id="stays">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <span class="eyebrow">THE AZURE COLLECTION</span>
+
+                        <h2>
+                            Exceptional places
+                            <span>to call your own.</span>
+                        </h2>
+                    </div>
+
+                    <p>
+                        A carefully selected collection of exceptional
+                        hotels, private retreats and remarkable stays.
+                    </p>
+
+                </div>
+
+
+                <div class="stays-grid">
+
+                    <article class="stay-card">
+
+                        <div class="stay-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=1000&q=85"
+                                alt="Luxury tropical overwater resort"
+                            >
+
+                            <span class="stay-tag">MALDIVES</span>
+                        </div>
+
+                        <div class="stay-info">
+                            <span class="stay-type">PRIVATE ISLAND RESORT</span>
+                            <h3>COMO Maalifushi</h3>
+                            <p>Secluded luxury surrounded by the Indian Ocean.</p>
+                            <a href="#contact">
+                                Discover stay
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </article>
+
+
+                    <article class="stay-card">
+
+                        <div class="stay-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1000&q=85"
+                                alt="Luxury tropical villa with private pool"
+                            >
+
+                            <span class="stay-tag">BALI</span>
+                        </div>
+
+                        <div class="stay-info">
+                            <span class="stay-type">JUNGLE RETREAT</span>
+                            <h3>The Ubud Sanctuary</h3>
+                            <p>A peaceful retreat within Bali's lush landscapes.</p>
+                            <a href="#contact">
+                                Discover stay
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </article>
+
+
+                    <article class="stay-card">
+
+                        <div class="stay-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1000&q=85"
+                                alt="Beautiful Italian coastal village"
+                            >
+
+                            <span class="stay-tag">ITALY</span>
+                        </div>
+
+                        <div class="stay-info">
+                            <span class="stay-type">COASTAL HIDEAWAY</span>
+                            <h3>Casa della Costa</h3>
+                            <p>Italian coastal living with timeless elegance.</p>
+                            <a href="#contact">
+                                Discover stay
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Experiences -->
+        <section class="experiences-section section-padding" id="experiences">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <span class="eyebrow">BEYOND THE DESTINATION</span>
+
+                        <h2>
+                            Moments that
+                            <span>make the journey.</span>
+                        </h2>
+                    </div>
+
+                    <p>
+                        Travel is not simply about where you go.
+                        It is about everything you experience along the way.
+                    </p>
+
+                </div>
+
+
+                <div class="experiences-grid">
+
+                    <article class="experience-card experience-large">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1200&q=85"
+                            alt="Clear ocean water and tropical beach"
+                        >
+
+                        <div class="experience-content">
+                            <span>01 / OCEAN</span>
+                            <h3>Life by the water</h3>
+                            <p>Private beaches, sailing and extraordinary ocean escapes.</p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="experience-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1000&q=85"
+                            alt="Luxury spa wellness experience"
+                        >
+
+                        <div class="experience-content">
+                            <span>02 / WELLNESS</span>
+                            <h3>Time to reconnect</h3>
+                            <p>Restorative retreats and moments of complete tranquillity.</p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="experience-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=85"
+                            alt="Elegant restaurant dining experience"
+                        >
+
+                        <div class="experience-content">
+                            <span>03 / CULTURE</span>
+                            <h3>Discover local life</h3>
+                            <p>Remarkable food, local traditions and meaningful encounters.</p>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Philosophy -->
+        <section class="philosophy-section section-padding" id="philosophy">
+
+            <div class="container philosophy-grid">
+
+                <div class="philosophy-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=85"
+                        alt="Peaceful mountain landscape surrounded by nature"
+                    >
+                </div>
+
+                <div class="philosophy-content">
+
+                    <span class="eyebrow">THE AZURE PHILOSOPHY</span>
+
+                    <h2>
+                        Travel further.
+                        <span>Feel more.</span>
+                    </h2>
+
+                    <p>
+                        We believe the best journeys are never measured
+                        by distance alone. They are found in the places
+                        that move you, the people you meet and the
+                        experiences that change how you see the world.
+                    </p>
+
+                    <p>
+                        Every AZURE journey begins with a simple idea:
+                        your escape should feel entirely your own.
+                    </p>
+
+                    <a href="#contact" class="underlined-link">
+                        Begin your journey
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Newsletter -->
+        <section class="newsletter-section section-padding">
+
+            <div class="container newsletter-content">
+
+                <span class="eyebrow">A LITTLE INSPIRATION</span>
+
+                <h2>
+                    Let extraordinary
+                    <span>find its way to you.</span>
+                </h2>
+
+                <p>
+                    Discover inspiring destinations, thoughtful travel
+                    stories and the occasional reason to escape.
+                </p>
+
+                <form class="newsletter-form">
+
+                    <label for="newsletterEmail" class="visually-hidden">
+                        Your email address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="newsletterEmail"
+                        placeholder="Your email address"
+                        required
+                    >
+
+                    <button type="submit">
+                        Subscribe
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact CTA -->
+        <section class="contact-section section-padding" id="contact">
+
+            <div class="container contact-content">
+
+                <span class="eyebrow">YOUR NEXT CHAPTER BEGINS HERE</span>
+
+                <h2>
+                    The world is waiting.
+                    <span>Where will you go?</span>
+                </h2>
+
+                <p>
+                    Tell us what extraordinary means to you.
+                    Let's create a journey worth remembering.
+                </p>
+
+                <a href="mailto:hello@azureluxury.com" class="btn btn-primary">
+                    Plan Your Escape
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-main">
+
+                <div class="footer-brand">
+
+                    <a href="#home" class="logo">
+                        AZURE<span>.</span>
+                    </a>
+
+                    <p>
+                        Extraordinary destinations.
+                        Exceptional experiences.
+                        Journeys that stay with you.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-column">
+                    <h4>EXPLORE</h4>
+                    <a href="#destinations">Destinations</a>
+                    <a href="#stays">The Collection</a>
+                    <a href="#experiences">Experiences</a>
+                </div>
+
+
+                <div class="footer-column">
+                    <h4>AZURE</h4>
+                    <a href="#philosophy">Our Story</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#home">Back to top</a>
+                </div>
+
+
+                <div class="footer-column">
+                    <h4>FOLLOW OUR JOURNEY</h4>
+
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="Pinterest">
+                            <i class="fa-brands fa-pinterest-p"></i>
+                        </a>
+
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>&copy; 2026 AZURE Luxury Escape. All rights reserved.</p>
+
+                <span>CRAFTED FOR THE EXTRAORDINARY.</span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
